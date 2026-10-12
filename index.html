@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush | My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Ayush</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-times cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items"><a class="links" href="#home">Home</a></li>
+                    <li class="menu-list-items"><a class="links" href="#portfolio">Portfolio</a></li>
+                    <li class="menu-list-items"><a class="links" href="#about">About</a></li>
+                    <li class="menu-list-items"><a class="links" href="#services">Interests</a></li>
+                    <li class="menu-list-items"><a class="links" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main intro -->
+    <section id="home" class="hero">
+        <div class="intro">
+            <div class="headings">
+                <h3 class="greet-heading">Hey, I'm</h3>
+                <h1 class="my-heading">Ayush</h1>
+                <h4 class="sub-heading">I like tech, games, music, AI, and making random ideas into real projects.</h4>
+            </div>
+            <div class="intro-buttons">
+                <button class="btn common-btn" onclick="document.querySelector('#about').scrollIntoView({behavior: 'smooth'})">A bit about me</button>
+                <button class="btn ghost-btn" onclick="document.querySelector('#portfolio').scrollIntoView({behavior: 'smooth'})">Stuff I like</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Things I like -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-heading">
+            <h1 class="my-heading text-center">Things I'm Into</h1>
+        </div>
+        <div class="portfolio-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image"><img src="./Images/designImage2.avif" alt="AI and maker projects"></div>
+                        <h3 class="greet-heading blue-text">AI &amp; Tech Ideas</h3>
+                        <p class="small-para blue-text">Trying out ideas and seeing what I can build</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image"><img src="./Images/webDevelopment2.avif" alt="Gaming and PC technology"></div>
+                        <h3 class="greet-heading blue-text">Gaming &amp; PCs</h3>
+                        <p class="small-para blue-text">Games, computer parts, and performance</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image"><img src="./Images/SEOImage2.avif" alt="Python and coding"></div>
+                        <h3 class="greet-heading blue-text">Python &amp; Coding</h3>
+                        <p class="small-para blue-text">Learning to code and make useful stuff</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image"><img src="./Images/contentImage2.avif" alt="Music production"></div>
+                        <h3 class="greet-heading blue-text">Making Music</h3>
+                        <p class="small-para blue-text">Beats, synths, and messing around in LMMS</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image"><img src="./Images/wordpressImage2.avif" alt="Shows and media"></div>
+                        <h3 class="greet-heading blue-text">Shows &amp; Media</h3>
+                        <p class="small-para blue-text">Watching shows and keeping my files organized</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image"><img src="./Images/videoEditing2.avif" alt="Creative projects"></div>
+                        <h3 class="greet-heading blue-text">Random Projects</h3>
+                        <p class="small-para blue-text">Trying new apps, tools, and ideas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About me -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h1 class="my-heading">About Me</h1>
+            <p class="lead-para">I like a bit of everything, especially tech. I'm into AI, Python, gaming, and PC stuff. I also like making music, trying new apps, and watching shows like Miraculous.</p>
+            <p>I usually have a bunch of ideas I want to try. Some turn into projects and some are just things I want to learn about. I like figuring out how stuff works and seeing what I can make with it.</p>
+        </div>
+        <div class="about-image">
+            <img src="./Images/heroImg2.avif" alt="Technology and creative projects">
+        </div>
+    </section>
+
+    <!-- More interests -->
+    <section class="services" id="services">
+        <div class="services-heading">
+            <h1 class="my-heading text-center">More Stuff I Like</h1>
+        </div>
+        <div class="services-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3 class="greet-heading blue-text">AI &amp; Building Things</h3>
+                        <p class="small-para">I think AI is really interesting. I like coming up with ideas for tools and gadgets, and seeing how software and hardware can work together.</p>
+                        <p class="small-para">I'd like to try more projects and learn as I go.</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon"><i class="fas fa-code"></i></div>
+                        <h3 class="greet-heading blue-text">Coding</h3>
+                        <p class="small-para">I'm learning more about Python and how websites and apps work. I want to make projects that actually do something, not just follow examples.</p>
+                        <p class="small-para">There's still a lot to learn, but thats part of it.</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon"><i class="fas fa-gamepad"></i></div>
+                        <h3 class="greet-heading blue-text">Gaming &amp; PC Tech</h3>
+                        <p class="small-para">I like playing games and learning about PC parts. I end up comparing graphics cards, processors, and settings to see what works best.</p>
+                        <p class="small-para">I also like finding ways to get better performance out of a setup.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon"><i class="fas fa-music"></i></div>
+                        <h3 class="greet-heading blue-text">Music</h3>
+                        <p class="small-para">I've been trying to make beats in LMMS and learning about synths, notes, and effects. I'm still working out what sounds good.</p>
+                        <p class="small-para">Some experiments sound pretty bad, but thats how you learn lol.</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon"><i class="fas fa-tv"></i></div>
+                        <h3 class="greet-heading blue-text">Shows &amp; Media</h3>
+                        <p class="small-para">I like Miraculous and other shows, and I like keeping my media files sorted so I can find stuff without digging through a mess.</p>
+                        <p class="small-para">Organizing it all can take a while, but its worth it.</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon"><i class="fas fa-flask"></i></div>
+                        <h3 class="greet-heading blue-text">Trying New Stuff</h3>
+                        <p class="small-para">I like testing out new programs, tools, and project ideas. Sometimes it works, sometimes it doesnt, but I usually learn something.</p>
+                        <p class="small-para">This site is just a place to show some of the things I'm into.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact-heading">
+            <h1 class="my-heading text-center">Contact</h1>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <h1 class="greet-heading">Got an idea?</h1>
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('This form is just a demo and does not send messages yet.');">
+                    <input class="form-controls" type="text" name="name" placeholder="Your name" required>
+                    <input class="form-controls" type="email" name="email" placeholder="Your email" required>
+                    <input class="form-controls" type="text" name="topic" placeholder="Whats it about?">
+                    <textarea class="form-controls" name="message" placeholder="Write a message..." cols="30" rows="10" required></textarea>
+                    <input class="form-btn btn common-btn" type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="contact-details">
+                <h1 class="greet-heading">Things I like talking about</h1>
+                <div class="details">
+                    <h5 class="contact-heading">TECH</h5>
+                    <p class="contact-text">AI, Python, apps, and gadgets</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">GAMES</h5>
+                    <p class="contact-text">PCs, gaming, and hardware</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">MUSIC</h5>
+                    <p class="contact-text">Beats and synth sounds</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">OTHER STUFF</h5>
+                    <p class="contact-text">Shows, media, and new project ideas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>Just a site about the stuff I like and things I want to make.</h4>
+            <div class="social-links">
+                <div class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-list-items"><a class="footer-links" href="#contact" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="footer-list-items"><a class="footer-links" href="#contact" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li class="footer-list-items"><a class="footer-links" href="#contact" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li class="footer-list-items"><a class="footer-links" href="#contact" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
